@@ -1,0 +1,26 @@
+/* Caja contenedora para especificar cualquier unidad de medida */
+
+.contact-form {
+	/* font-size: 20px; */ /* Ahora 1 em vale 20px y es heredado */
+}
+	
+.contact-form__h2 {
+	/* Tamaño de la letra usando medidas fijas. */
+	/* font-size: 50px; */ /* otras medidas: cm, mm, pt */
+
+	/* Meidas relativas (ideal para multiples dispositivos) */
+	/* font-size: 5em; */ /* 1 = 16px por defecto o al valor que le demos a la caja contenedora */
+}
+
+/* Elimina los valores por defecto */
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.contact-form {
+	font-size: 25px;
+	background-color: #000;
+	width: 50vw /* otra medida es el % */ ; /* Le da un ancho del 50% de la ventana al fondo del titulo */
+	height: 50vh; /* Alto del 50% de la ventana al fondo del titulo */
+}

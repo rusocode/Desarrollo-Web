@@ -1,0 +1,16 @@
+
+/*
+
+	Jerarquias de especificidad
+		- !important
+		- estilos en linea
+		- ID
+		- Clases, pseudo-clases, atributos
+		- elementos
+		- pseudo-elementos
+
+*/
+
+.titulo2 {
+	color: red;
+}

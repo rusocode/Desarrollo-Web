@@ -1,0 +1,54 @@
+/*
+ CSS Selectores:
+- universal
+- de tipo
+- clases
+- ID
+- por atributo
+- descendiente
+- pseudo-clases
+*/
+
+/* selector {
+	propiedad:  valor;
+} */
+
+/* Selector universal
+* {
+	color: red; /* Tambien se puede usar un valor hexadecimal para especificar un valor exacto del color. */
+/* } */
+
+/* Selector de tipo 
+h1 {
+	color: green;
+} */
+
+/* Selector de clase 
+.clase-h1 {
+	color: gray;
+} */
+
+/* Selector de ID (tiene q ser unico)
+#elemento {
+	color: blueviolet;
+} */
+
+/* Selector de atributo
+[rancio="si"] {
+	color: pink;
+} */
+
+/* Selector descendiente */
+/* h2 p {
+	color: darkred;
+}
+
+.clase1-h3 p {
+	color: skyblue;
+} */
+
+/* Selector de pseudo-clases */
+/*
+.clase2-h3 p:hover {
+	color: red;
+} */
