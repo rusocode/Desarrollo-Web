@@ -6,17 +6,29 @@
 
 h2 {
 
+	/* Color de fondo */
 	background-color: red;
+
+	/* Caja en linea */
 	display: inline-block;
-	/* padding: 20px; */ /* Espacio de 20px para todos los lados */
-	padding: 10px 50px; /* Arriba y abajo 10px, y a los costados 50px */
-	/* padding: 10px 20px 30px 40px; */ /* top 10px, right 20px, bottom 30px y left 40px*/
-	/* Alto y ancho de la caja */
-	height: 100px; 
-	width: 300px; /* Se le suma tambien los espacios laterales del padding */
 
-	/* Para que la caja sea fija */
-	box-sizing: border-box;
+	/* Margen interno (top, right, bottom y left) */
+	padding: 20px;
 
+	/* Alto y ancho de la caja (+ espacios del padding) */
+	/* height: 200px; */
+	width: 100px;
+
+	/* Caja fija */
+	box-sizing: border-box; /* content-box */
+
+	/* Texto centrado */
 	text-align: center;
+
+	/* Margen externo */
+	margin: 10px;
+
+	/* Borde redondeado */
+	border-radius: 10px;
+
 }
