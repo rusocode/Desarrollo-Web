@@ -9,9 +9,9 @@
 }
 
 .contact-form__h2 {
-	font-size: 2em;
 	font-family: 'Space Mono', monospace; /* Especifica la fuente externa y utiliza monospace en caso de que no la encuentre */
-	line-height: 1; /* Valor que toma la letra a partir de la mitad, en este caso hacia 0,5 arriba y 0,5 abajo */
 	font-weight: 200; /* Grosor de las letras */
+	font-size: 2em;
+	line-height: 1; /* Valor que toma la letra a partir de la mitad, en este caso hacia 0,5 arriba y 0,5 abajo */
 	color: grey;
 }

@@ -1,6 +1,4 @@
-
 /*
-
 	Jerarquias de especificidad
 		- !important
 		- estilos en linea
@@ -8,9 +6,16 @@
 		- Clases, pseudo-clases, atributos
 		- elementos
 		- pseudo-elementos
-
 */
 
-.titulo2 {
+h1 {
+	color: pink !important;
+}
+
+#ID {
 	color: red;
+}
+
+.clase {
+	color: yellow;
 }

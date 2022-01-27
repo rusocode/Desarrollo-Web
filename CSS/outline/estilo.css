@@ -1,0 +1,21 @@
+/*
+	El Outline es un Shorthand, sindo este, una forma de reducir codigo.
+*/
+
+.caja1 {
+	width: 200px;
+	height: 200px;
+	background: red;
+	/* Centra la caja */
+	margin: auto; 
+	/* Genera el mismo efecto que border sin mover la caja. Seria como un marcador de la caja. */
+	outline: 10px solid black;
+	box-sizing: content-box;
+}
+
+.caja2 {
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	margin: auto;
+}
