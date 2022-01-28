@@ -1,0 +1,35 @@
+* {
+	font-family: monospace;
+	font-size: 25px;
+}
+
+div {
+	width: 120px;
+	height: 120px;
+	display: block;
+	background: yellow;
+}
+
+.caja1 {
+	background-color: red;
+}
+
+.caja2 {
+	background-color: green;
+	/* La posicion relativa conserva su espacio (punto de referencia) cuando cambia de posicion.
+	La posicion por defecto es static e indica que no esta posicionado. */
+	position: relative;
+	top: 50px; /* Las propiedades top y left son las mas importantes con respecto a right y bottom */
+
+	/*z-index: 1; Por defecto el z-index de la caja 2 es 0, pero para posicionarse por encima de la caja 3, se utiliza
+	un z-index mayor a la caja 3. */
+}
+
+.caja3 {
+	background-color: blue;
+	/* ¿Como hacer para que la caja 3 se posicione por encima de la caja 2?
+	Tan facil como usar la propiedad "position: relative" despues de definir la caja 2, ya que logicamente toma la ultima 
+	propiedad de la secuencia.
+	En caso querer evitar este tipo de comportamiento por defecto, se usaria la propiedad "z-index: 1" para la caja 2. */
+	position: relative;
+}

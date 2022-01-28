@@ -6,9 +6,9 @@
 	width: 200px;
 	height: 200px;
 	background: red;
-	/* Centra la caja */
+	/* Centra la caja en la pagina */
 	margin: auto; 
-	/* Genera el mismo efecto que border sin mover la caja. Seria como un marcador de la caja. */
+	/* Genera el mismo efecto que la propiedad border, pero sin mover la caja. Seria como un marcador. */
 	outline: 10px solid black;
 	box-sizing: content-box;
 }
