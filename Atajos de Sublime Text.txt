@@ -1,0 +1,2 @@
+Click izquierdo + CTRL = Escribir en varias filas al mismo tiempo
+CTRL + Shift + P = Instalar paquetes

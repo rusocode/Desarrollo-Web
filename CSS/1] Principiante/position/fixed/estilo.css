@@ -1,0 +1,12 @@
+* {
+	font-family: monospace;
+	font-size: 50px;	
+}
+
+.fixed {
+	background: red;
+	/* La posicion de la caja queda fijada */
+	position: fixed;
+	opacity: 0.4;
+	/* top: 100px; */
+}

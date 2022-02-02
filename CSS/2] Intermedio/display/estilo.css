@@ -1,0 +1,50 @@
+* {
+	font-family: monospace;
+	font-size: 25px;
+}
+
+div {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	border: 5px solid black;
+	background: red;
+}
+
+/* Ocupan toda la fila, por lo tanto no permiten poner un elemento al lado del 
+otro. Pueden cambiar su resolucion. */
+.block {
+	display: block;
+	width: 200px;
+}
+
+/* Ocupan solo el contenido y permiten poner un elemento al lado del otro. Se 
+usan generalmente para textos y NO pueden cambiar la resolucion (width, height, 
+margin, etc.). */
+.inline {
+	display: inline;
+}
+
+/* Ocupan solo el contenido, pero a diferencia de inline, pueden especificar una
+resolucion. */
+.inline-block {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+/*
+	
+	La propiedad por defecto de los divs es block.
+
+	Los otros display mas usados:
+
+	FLEX
+	GRID
+
+	INLINE-FLEX
+	INLINE-GRID
+
+	Las tablas no se usan mas...
+
+*/

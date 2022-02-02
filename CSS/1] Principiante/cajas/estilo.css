@@ -1,0 +1,16 @@
+/* Hay dos tipos de cajas, las que son en linea y las que son en bloque.
+Las que son en bloque son las mas importantes, y siempre se van a ajustar al ancho de su contenedor.
+El tamaño de las cajas en linea se basan en su contenido. */
+
+* {
+	font-family: 'PT Mono', cursive;
+	font-weight: 100;
+	font-size: 30px;
+}
+
+/* ¿Como hacer para que los bloques se comporten como elementos en linea? */
+h2 {
+	/* A los elementos en linea no se les puede dar un tamaño. */
+	display: inline;
+}
+
