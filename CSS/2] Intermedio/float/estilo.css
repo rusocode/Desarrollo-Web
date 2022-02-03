@@ -3,23 +3,21 @@
 	font-size: 25px;
 }
 
-.contenedor {
-	margin: auto;
-	margin-top: 50px;
-	border: 5px solid black;
-	width: 50%;
-}
+/* El unico uso util de la propiedad float es este. Da un efecto en donde
+el texto envuelve la imagen. */
 
 .contenedor {
 	width: 50%;
+	margin: 50px auto;
+	border: 5px solid black;
 	padding: 20px;
 }
 
 .contenedor img {
 	float: right;
 	width: 200px;
-	margin-left: 10px;
-	margin-top: 10px;
-
+	margin-left: 18px;
+	margin-top: 18px;
+	/* border: 1px solid black; */
 }
 

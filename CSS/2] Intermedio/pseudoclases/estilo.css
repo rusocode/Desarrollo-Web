@@ -2,3 +2,77 @@
 	font-family: monospace;
 	font-size: 25px;
 }
+
+.caja1 {
+	width: 200px;
+	height: 200px;
+	background: pink;
+	/* Tiempo que tarda en cambiar las propiedades de la caja */
+	transition: background 1s, width 1s, height 1s; /* Para simplificar esto se puede usar 
+	el valor "all 1s" (aunque esto no es recomendado). */
+}
+
+/* Cambia las propiedades de la caja al pasar el mouse */
+.caja1:hover {
+	background: violet;
+	width: 230px;
+	height: 230px;
+	
+}
+
+a {
+	display: block;
+	margin: 10px;
+}
+
+/* El link queda en color rojo en caso de que no se haya visitado o no exista */
+a:link {
+	color: red;
+}
+
+/* ¿Como cambiar el estilo de los links que ya estan visitados? */
+a:visited {
+	color: violet;
+}
+
+/* Los link y visited tienen mayor prioridad que el a, a menos que se use "!important" */
+a {
+	color: green;
+}
+
+.caja2 {
+	width: 200px;
+	height: 200px;
+	background: red;
+	margin: 10px;
+	transition: all 1s;
+}
+
+/* Cambia la propiedad cuando se mantiene clickeado */
+.caja2:active {
+	background: blue;
+	width: 500px;
+}
+
+
+/* Obtiene el foco cuando el elemento esta seleccionado */
+.caja3 {
+	margin: 10px;
+	border: 1px solid black;
+	outline: none;
+	transition: background 1s;
+}
+
+.caja3:focus {
+	background: lightgrey;
+}
+
+/* Modifica el lenguaje del texto pasando el parametro a la funcion lang() */
+.caja4 {
+	margin: 10px;
+}
+
+/* Marca el elemento que esta en ingles */
+.caja4 b:lang(en) {
+	background: red;
+}

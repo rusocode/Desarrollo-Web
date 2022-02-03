@@ -1,4 +1,57 @@
 * {
 	font-family: monospace;
-	font-size: 25px;
+	font-size: 20px;
 }
+
+/* Los pseudoelementos solo se pueden aplicar a los elementos que no son inline. */
+.texto {
+	padding: 10px;
+}
+
+/* Cambia las propiedades de la primera fila dependiendo de la resolucion */
+.texto::first-line {
+	color: violet;
+	font-size: 2em;
+}
+
+/* Cambia las propiedades de la primera letra dependiendo de la resolucion */
+.texto::first-letter {
+	color: red;
+	font-size: 5em;
+}
+
+form {
+	background-color: gray;
+	display: block;
+	width: 50%;
+	margin: 100px auto;
+	padding: 100px;
+}
+
+input {
+	width: 100%;
+	/* Quita los bordes del input seleccionado */
+	border: 1px solid gray;
+	outline: none;
+	/* Quita los bordes del input seleccionado */
+	padding: 5px;
+}
+
+/* Cambia las propiedades del placeholder */
+input::placeholder {
+	color: slategray;
+	font-style: italic;
+}
+
+/* Agrega contenido antes del elemento */
+b::before {
+	content: "rulo ";
+	color: white;
+}
+
+/* Agrega contenido despues del elemento */
+b::after {
+	content: " quemado";
+	color: white;
+}
+
