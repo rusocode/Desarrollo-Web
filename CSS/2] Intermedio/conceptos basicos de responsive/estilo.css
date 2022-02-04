@@ -1,5 +1,26 @@
 * {
 	font-family: monospace;
+}
+
+div {
+	width: 49%;
+	display: inline-block;
+	padding: 20px;
+	background: #ddd;
+}
+
+h1 {
 	font-size: 25px;
 }
 
+.caja2 {
+	background: #bbb;
+}
+
+/* Si la pantalla llegua a 800px o menos, entonces... */
+@media only screen and (max-width: 800px) {
+	div {
+		display: block;
+		width: 100%;
+	}
+}

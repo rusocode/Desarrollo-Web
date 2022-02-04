@@ -2,3 +2,22 @@
 	font-family: monospace;
 	font-size: 25px;
 }
+
+.caja {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	border: 1px solid black;
+	
+	/* Es mejor especificar el color en hexadecimal o RGB, ya que al usar el nombre de un color como valor,
+	este no estaria siendo el mismo en los distintos navegadores. */
+	background: #48e; /* https://www.w3schools.com/colors/colors_picker.asp */
+	
+	/* RGB */
+	/* background: rgb(56, 156, 100); */
+	
+	/* RGBA es lo mismo que RGB pero con un cuarto parametro que indica la opacidad. */
+	/* background: rgba(0, 255, 0, 0.2); */
+}
+
+

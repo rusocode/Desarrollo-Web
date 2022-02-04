@@ -2,3 +2,21 @@
 	font-family: monospace;
 	font-size: 25px;
 }
+
+.caja {
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	margin: 10px;
+	border: 1px solid black;
+	background-color: hotpink;
+
+	/* Cambia el tipo de cursor */
+	cursor: crosshair;
+
+	/* Lista de cursor: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor */
+}
+
+.caja:active {
+	cursor: row-resize;
+}
