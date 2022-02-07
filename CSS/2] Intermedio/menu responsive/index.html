@@ -15,22 +15,28 @@
 
 	<!-- Aplicando la metodologia BEM para una mejor estructura -->
 	<header>
-		<nav class="nav">
-			<ul class="nav__ul">
-				<li class="nav__li"><a href="#">Inicio</a></li>
-				<li class="nav__li"><a href="#">Sobre nosotros</a></li>
-				<li class="nav__li"><a href="#">Gana dinero</a></li>
-				<li class="nav__li"><a href="#">Ayuda</a></li>
+		<nav class="nav"> <!-- Bloque -->
+
+			<ul class="nav__ul"> <!-- Elemento -->
+				<!-- fas = font awesome solid, fa-home = icon -->
+				<li class="nav__li"><i class="fas fa-home"></i><a href="#">Inicio</a></li> <!-- La unica forma de especificar dos clases es dejando un espacio entre estas -->
+				<li class="nav__li"><i class="fas fa-user-friends"></i><a href="#">Sobre nosotros</a></li>
+				<li class="nav__li"><i class="fas fa-dollar-sign"></i><a href="#">Gana dinero</a></li>
+				<li class="nav__li"><i class="fas fa-question-circle"></i><a href="#">Ayuda</a></li>
 			</ul>
+
 			<ul class="nav__responsive-ul">
-				<div class="nav__responsive-button"></div>
+				<div class="nav__button-container">
+					<div class="nav__responsive-button fas fa-bars"></div>
+				</div>
 				<div class="nav__li-container">
-					<li class="nav__responsive-li"><a href="#">Inicio</a></li>
-					<li class="nav__responsive-li"><a href="#">Sobre nosotros</a></li>
-					<li class="nav__responsive-li"><a href="#">Gana dinero</a></li>
-					<li class="nav__responsive-li"><a href="#">Ayuda</a></li>
+					<li class="nav__responsive-li"><i class="fas fa-home"></i><a href="#">Inicio</a></li>
+					<li class="nav__responsive-li"><i class="fas fa-user-friends"></i><a href="#">Sobre nosotros</a></li>
+					<li class="nav__responsive-li"><i class="fas fa-dollar-sign"></i><a href="#">Gana dinero</a></li>
+					<li class="nav__responsive-li"><i class="far fa-question-circle"></i></i><a href="#">Ayuda</a></li>
 				</div>
 			</ul>
+
 		</nav>
 	</header>
 	
