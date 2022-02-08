@@ -1,0 +1,72 @@
+* {
+	font-family: monospace;
+	font-weight: 100;
+}
+
+/* Contenedor */
+.flex-container {
+
+	/* A diferencia de inline-block, flex se ajusta al contenido y las cajas no cambian su 
+	posicion en el eje y, siempre y cuando no se especifique un wrap (no flexible).
+
+	Flex se maneja con el main axis (eje x) y cross axis (eje y). */
+	display: flex;
+	height: 100vh;
+
+	/* flex-wrap: nowrap; 		/* Valor por defecto */
+	/* flex-wrap: wrap; 		/* Las cajas bajan cuando se cambia la resolucion */
+	flex-wrap: wrap-reverse; /* Las cajas suben cuando se cambia la resolucion */
+	/* Abreviacion para reemplazar flex-direction y flow-wrap en una sola linea */
+	/* flex-flow: column wrap;	/* Usarlo en caso de cambiar estas dos propiedades */
+
+	/* -Direcciones */
+	/* flex-direction: row;				/* Valor por defecto */
+	/* flex-direction: column;			/* Direccion en columna */
+	/* flex-direction: row-reverse;		/* Rotacion vertical */
+	/* flex-direction: column-reverse;	/* Rotacion horizontal */	
+
+	/* -Alineaciones del main axis */
+	/* justify-content: center;			/* Centra horizontalmente */
+	/* justify-content: space-around;	/* Le da un margen automatico a todas las cajas */
+	/* justify-content: space-between;	/* Deja la mayor cantidad de espacio entre cajas */
+	justify-content: space-evenly;	/* Deja el mismo margen para todas las cajas, a diferencia de space-around 
+	que deja el mismo margen a excepcion del primer margen izquierdo y ultimo margen derecho. */
+
+	/* -Alineaciones del cross axis (items) */
+	/* Propiedades para UNA linea de items */
+	/* align-items: stretch;	/* Valor por defecto */
+	/* align-items: flex-start;	/* Posiciona la linea al principio *util cuando no se define un height en el item */ 
+	/* align-items: center;		/* Centra verticalmente */
+	/* align-items: flex-end;	/* Posiciona la linea al final */
+	/* align-items: baseline;	/* Posiciona la linea al final *util cuando se usa wrap-reverse */
+
+	/* Propiedades para MAS DE UNA linea de items */
+	/* align-content: stretch; 	/* */
+	/* align-content: flex-start; /* */
+	/* align-content: center; /* */
+	/* align-content: flex-end; /* */
+	align-content: baseline; /* */
+	
+}
+
+/* Contenido */
+.flex-item {
+	background-color: #248;
+	color: #fff;
+	text-align: center;
+	/* min-width: 200px; /* Especifica el minimo de flexibilidad */
+	width: 120px; 
+	height: 120px;
+	margin: 5px;
+	padding-top: 5px;
+}
+
+/* Color para la primera caja */
+.red {
+	background: red;
+}
+
+/* Color para la ultima caja */
+.violet {
+	background: violet;
+}
