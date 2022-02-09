@@ -1,9 +1,10 @@
 /*
 	Jerarquia de propiedades en el Box Model
-		- content
-		- padding
-		- border
+		- screen
 		- margin
+		- border
+		- padding
+		- content
 */
 
 div {
