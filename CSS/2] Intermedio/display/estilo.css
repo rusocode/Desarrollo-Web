@@ -4,11 +4,11 @@
 }
 
 div {
+	background: red;
 	width: 150px;
 	height: 150px;
 	margin: 20px;
 	border: 5px solid black;
-	background: red;
 }
 
 /* Ocupan toda la fila, por lo tanto no permiten poner un elemento al lado del 

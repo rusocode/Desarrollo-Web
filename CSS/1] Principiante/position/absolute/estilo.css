@@ -4,21 +4,18 @@
 }
 
 .contenedor {
+	position: relative;
 	width: 450px;
 	height: 450px;
-
-	border: 5px solid black;
-
-	position: relative;
-
 	/* La propiedad auto centra el contenedor en la pantalla, resumiendo el uso de 
 	margin-left y margin-right. */
 	margin: 50px auto;
+	border: 5px solid black;
 }
 
 div {
-	display: block;
 	background: green;
+	display: block;
 	/* La posicion absoluta no reserva espacios pero guarda el punto de referencia, 
 	por lo tanto la caja que esta abajo sube. */
 	position: absolute; /* Esto tambien se aplica para las cajas hijas */

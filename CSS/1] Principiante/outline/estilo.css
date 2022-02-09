@@ -3,19 +3,19 @@
 */
 
 .caja1 {
+	background: red;
+	box-sizing: content-box;
 	width: 200px;
 	height: 200px;
-	background: red;
 	/* Centra la caja en la pagina */
 	margin: auto; 
 	/* Genera el mismo efecto que la propiedad border, pero sin mover la caja. Seria como un marcador. */
 	outline: 10px solid black;
-	box-sizing: content-box;
 }
 
 .caja2 {
+	background: yellow;
 	width: 200px;
 	height: 200px;
-	background: yellow;
 	margin: auto;
 }

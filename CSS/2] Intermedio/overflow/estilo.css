@@ -4,22 +4,15 @@
 }
 
 div {
-	margin: auto;
-	margin-top: 50px;
+	background: red;
 	width: 320px;
 	height: 350px;
+	margin: 50px auto;
 	border: 5px solid black;
-	background: red;
 
-	/* overflow es un shorthand y su valor por defecto es visible. */
-
-	/* En caso de que el contenido sobrepase la caja, nos da la posibilidad de scrollear dentro 
-	de esta. */
-	/* overflow: auto; */
-
-	/* Coloca la barra de scroll por mas que no sea necesario. */
-	overflow: scroll;
-
-	/* Oculta la barra horizontal */
-	overflow-x: hidden;
+	/* overflow: visible; 	/* Valor por defecto */
+	overflow: scroll;		/* Coloca la barra de scroll por mas que no sea necesario */
+	overflow-x: hidden;		/* Oculta la barra horizontal */
+	/* overflow: auto; 		/* En caso de que el contenido sobrepase la caja, nos da la posibilidad 
+	de scrollear dentro de esta */
 }

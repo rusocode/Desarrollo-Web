@@ -4,11 +4,10 @@
 }
 
 div {
+	background: yellow;
+	display: block;
 	width: 120px;
 	height: 120px;
-
-	display: block;
-	background: yellow;
 }
 
 .caja1 {

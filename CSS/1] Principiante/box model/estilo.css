@@ -7,6 +7,8 @@
 */
 
 div {
+	/* Color de fondo */
+	background-color: red;
 
 	/* Caja en linea */
 	display: inline-block;
@@ -14,9 +16,6 @@ div {
 	/* Alto y ancho de la caja */
 	width: 160px;
 	height: 80px;
-
-	/* Color de fondo */
-	background-color: red;
 
 	/* Texto centrado */
 	text-align: center;
@@ -26,15 +25,14 @@ div {
 
 	/* Box Model */
 
-	/* Margen interno (top, right, bottom y left) */
-	padding: 20px;
+	/* Margen externo */
+	margin: 10px;
 
 	/* Borde solido de 5px color negro */
 	border: 5px solid black;
 
-	/* Margen externo */
-	margin: 10px;
-
+	/* Margen interno (top, right, bottom y left) */
+	padding: 20px;
 }
 
 /* Cualquier borde o relleno se agrega al renderizado final. */

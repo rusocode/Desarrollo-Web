@@ -4,12 +4,12 @@
 }
 
 .caja {
+	background-color: hotpink;
+	box-sizing: border-box;
 	width: 100px;
 	height: 100px;
-	box-sizing: border-box;
 	margin: 10px;
 	border: 1px solid black;
-	background-color: hotpink;
 
 	/* Cambia el tipo de cursor */
 	cursor: crosshair;

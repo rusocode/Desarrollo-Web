@@ -4,28 +4,25 @@
 }
 
 .contenedor {
+	background: blue;
+	position: relative;
 	width: 300px;
 	height: 300px;
-	background: blue;
 	margin: 40px;
-
-	position: relative;
 }
 
 .hijo {
-	width: 120px;
-	height: 120px;
 	background-color: red;
-
 	/* Le da un efecto de superposicion sobre el contenedor */
 	position: relative;
+	width: 120px;
+	height: 120px;
 	top: -20px;
 	left: -20px;
-
-	/* Para poner al hijo por debajo del padre, hay que darle un z-index de -1. En este caso no es necesario especificar 
-	el z-index del padre. */
+	/* Para poner al hijo por debajo del padre, hay que darle un z-index de -1. En este caso no 
+	es necesario especificar el z-index del padre. */
 	z-index: -1;
 }
 
-/* Teniendo en cuenta que estamos trabajando con contenedores de padre e hijo, tomamos el ejemplo de una taza.
-Logicamente la taza no se puede superponer por encima del liquido que tiene dentro. */
+/* Teniendo en cuenta que estamos trabajando con contenedores de padre e hijo, tomamos el ejemplo 
+de una taza. Logicamente la taza no se puede superponer por encima del liquido que tiene dentro. */

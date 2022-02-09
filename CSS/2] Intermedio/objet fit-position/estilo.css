@@ -14,18 +14,14 @@
 	height: 100%;
 	border: 5px solid black;
 
-	/* Ajusta la imagen a las resoluciones reales */
-	/* object-fit: contain; */
-	/* Ajusta la imagen a la caja dando un efecto de estiramiento */
-	/* object-fit: fixed; */
-	/* Ajusta la imagen a la caja y recorta los bordes sobrantes */
-	object-fit: cover;
-	/* Muestra la imagen mas a la izquierda */
-	object-position: left;
-	/* Usa el tamaño original de la imagen. Este valor no es recomendable para imagenes grandes, ya 
-	que logicamente se veria solo una parte de esta. */
-	/* object-fit: none; */
-	/* Se queda con la resolucion mas chica, entre contain y none */
-	/* object-fit: scale-down; */
+	/* object-fit: none; 		/* Usa el tamaño original de la imagen. Este valor no es recomendable para 
+	imagenes grandes, ya que logicamente se veria solo una parte de esta. */
+	/* object-fit: contain; 	/* Ajusta la imagen a las resoluciones reales */
+	/* object-fit: scale-down; 	/* Se queda con la resolucion mas chica, entre none y contain */
+	/* object-fit: fixed; 		/* Ajusta la imagen a la caja dando un efecto de estiramiento */
+	object-fit: cover; 			/* Ajusta la imagen a la caja y recorta los bordes sobrantes */
+	object-position: left; 		/* Muestra la imagen mas a la izquierda */
+	
+	
 }
 

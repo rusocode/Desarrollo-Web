@@ -4,9 +4,9 @@
 }
 
 .caja1 {
+	background: pink;
 	width: 200px;
 	height: 200px;
-	background: pink;
 	/* Tiempo que tarda en cambiar las propiedades de la caja */
 	transition: background 1s, width 1s, height 1s; /* Para simplificar esto se puede usar 
 	el valor "all 1s" (aunque esto no es recomendado). */
@@ -17,7 +17,6 @@
 	background: violet;
 	width: 230px;
 	height: 230px;
-	
 }
 
 a {
@@ -41,9 +40,9 @@ a {
 }
 
 .caja2 {
+	background: red;
 	width: 200px;
 	height: 200px;
-	background: red;
 	margin: 10px;
 	transition: all 1s;
 }
