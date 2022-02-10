@@ -9,37 +9,40 @@
 	/* Flex se maneja con el main axis (eje x) y cross axis (eje y).
 	Las siguientes propiedades son reservadas solamente para los contenedores flexibles. */
 	display: flex;
-	height: 100vh; /* Ocupa todo el alto del contenedor flex (https://devcode.la/tutoriales/unidades-vh-vw-css/) */
+	height: 100vh; /* La unidad de medida vh es relativa a la altura de la ventana grafica y 
+	ocupa todo el alto del contenedor flex (https://devcode.la/tutoriales/unidades-vh-vw-css/) */
 
-	/* flex-wrap: nowrap; 		/* Valor por defecto */
-	/* flex-wrap: wrap; 		/* Las cajas bajan cuando se cambia la resolucion */
+	/* flex-wrap: nowrap; 		/* Sin saltos (valor por defecto) */
+	flex-wrap: wrap; 		/* Las cajas bajan cuando se cambia la resolucion */
 	/* flex-wrap: wrap-reverse; /* Las cajas suben cuando se cambia la resolucion */
 	/* Abreviacion para reemplazar flex-direction y flow-wrap en una sola linea */
 	/* flex-flow: column wrap;	/* Usarlo en caso de cambiar estas dos propiedades */
 
 	/* -Direcciones */
-	/* flex-direction: row;				/* Valor por defecto */
+	flex-direction: row;				/* Direccion en fila (valor por defecto) */
 	/* flex-direction: column;			/* Direccion en columna */
 	/* flex-direction: row-reverse;		/* Rotacion vertical */
 	/* flex-direction: column-reverse;	/* Rotacion horizontal */	
 
-	/* -Alineaciones del main axis */
-	/* justify-content: center;			/* Centra horizontalmente */
+	/* -Alineacion X */
+	/* justify-content: left;			/* Izquierda (valor por defecto) */
+	justify-content: center;			/* Centro */
+	/* justify-content: right;			/* Derecha */
 	/* justify-content: space-around;	/* Le da un margen automatico a todas las cajas */
 	/* justify-content: space-between;	/* Deja la mayor cantidad de espacio entre cajas */
-	justify-content: space-evenly;	/* Deja el mismo margen para todas las cajas, a diferencia de space-around 
+	/* justify-content: space-evenly;	/* Deja el mismo margen para todas las cajas, a diferencia de space-around 
 	que deja el mismo margen a excepcion del primer margen izquierdo y ultimo margen derecho. */
 
-	/* -Alineaciones del cross axis para UNA LINEA de items */
-	/* align-items: stretch;	/* Valor por defecto */
-	/* align-items: flex-start;	/* Posiciona la linea al principio *util cuando no se define un height en el item */ 
-	/* align-items: center;		/* Centra verticalmente */
-	/* align-items: flex-end;	/* Posiciona la linea al final */
-	/* align-items: baseline;	/* Posiciona la linea al final *util cuando se usa wrap-reverse */
-	/* -Alineaciones del cross axis para MAS DE UNA LINEA de items */
+	/* -Alineacion Y para UNA LINEA de items */
+	/* align-items: stretch;	/* Se estira en caso de que no se defina un height para el item (valor por defecto) */
+	/* align-items: flex-start;	/* Arriba */ 
+	/* align-items: center;		/* Centro */
+	/* align-items: flex-end;	/* Abajo */
+	/* align-items: baseline;	/* Abajo *Util cuando se usa wrap-reverse */
+	/* -Alineacion Y para MAS DE UNA LINEA de items */
 	/* align-content: stretch; 	/* */
 	/* align-content: flex-start; /* */
-	/* align-content: center; /* */
+	align-content: center; /* */
 	/* align-content: flex-end; /* */
 	/* align-content: baseline; /* */
 }
@@ -51,7 +54,7 @@
 	text-align: center;
 	/* min-width: 200px; /* Especifica el minimo de flexibilidad */
 	width: 120px; 
-	height: 120px;
+	height: 120px; 
 	margin: 5px;
 	padding-top: 5px;
 }
