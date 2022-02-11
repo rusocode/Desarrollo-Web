@@ -3,23 +3,24 @@
 	font-weight: 100;
 }
 
+/* Flex se maneja con el main axis (eje x) y cross axis (eje y). */
+
 /* Contenedor */
 .flex-container {
 	background-color: #69c;
-	/* Flex se maneja con el main axis (eje x) y cross axis (eje y).
-	Las siguientes propiedades son reservadas solamente para los contenedores flexibles. */
 	display: flex;
-	height: 100vh; /* La unidad de medida vh es relativa a la altura de la ventana grafica y 
-	ocupa todo el alto del contenedor flex (https://devcode.la/tutoriales/unidades-vh-vw-css/) */
+	height: 100vh; /* Ocupa todo el alto del viewport (https://devcode.la/tutoriales/unidades-vh-vw-css/) */
+
+	/* Propiedades reservadas para contenedores flexibles... */
 
 	/* flex-wrap: nowrap; 		/* Sin saltos (valor por defecto) */
-	flex-wrap: wrap; 		/* Las cajas bajan cuando se cambia la resolucion */
+	/* flex-wrap: wrap; 		/* Las cajas bajan cuando se cambia la resolucion */
 	/* flex-wrap: wrap-reverse; /* Las cajas suben cuando se cambia la resolucion */
 	/* Abreviacion para reemplazar flex-direction y flow-wrap en una sola linea */
 	/* flex-flow: column wrap;	/* Usarlo en caso de cambiar estas dos propiedades */
 
 	/* -Direcciones */
-	flex-direction: row;				/* Direccion en fila (valor por defecto) */
+	/* flex-direction: row;				/* Direccion en fila (valor por defecto) */
 	/* flex-direction: column;			/* Direccion en columna */
 	/* flex-direction: row-reverse;		/* Rotacion vertical */
 	/* flex-direction: column-reverse;	/* Rotacion horizontal */	
@@ -33,18 +34,18 @@
 	/* justify-content: space-evenly;	/* Deja el mismo margen para todas las cajas, a diferencia de space-around 
 	que deja el mismo margen a excepcion del primer margen izquierdo y ultimo margen derecho. */
 
-	/* -Alineacion Y para UNA LINEA de items */
+	/* -Alineacion Y para UNA LINEA de cajas */
 	/* align-items: stretch;	/* Se estira en caso de que no se defina un height para el item (valor por defecto) */
 	/* align-items: flex-start;	/* Arriba */ 
 	/* align-items: center;		/* Centro */
 	/* align-items: flex-end;	/* Abajo */
 	/* align-items: baseline;	/* Abajo *Util cuando se usa wrap-reverse */
-	/* -Alineacion Y para MAS DE UNA LINEA de items */
-	/* align-content: stretch; 	/* */
-	/* align-content: flex-start; /* */
-	align-content: center; /* */
-	/* align-content: flex-end; /* */
-	/* align-content: baseline; /* */
+	/* -Alineacion Y para MAS DE UNA LINEA de cajas */
+	/* align-content: stretch; 	/*  */
+	/* align-content: flex-start; /*  */
+	/* align-content: center; /*  */
+	/* align-content: flex-end; /*  */
+	/* align-content: baseline; /*  */
 }
 
 /* Contenido */
@@ -57,19 +58,44 @@
 	height: 120px; 
 	margin: 5px;
 	padding-top: 5px;
+
+	/* Reparte el ancho sobrante del viewport entre todas las cajas */
+	/* flex-grow: 1; /*  */
 }
 
 .primera-caja {
 	background: red;
+
+	/* Si por ejemplo sobran 300px, entonces 200px van para la caja roja y 100px para la violeta */
+	/* flex-grow: 2; /*  */
+
+	/* flex-basis tiene mayor prioridad aunque se coloque antes de width */
+	flex-basis: 200px;	/*  */
+	/* width: 120px; 	/*  */
+
+	/* ¿Que caja va a ceder mas espacio cuado no alcance el lugar disponible? */
+	/* Cede el espacio especificado a las cajas restantes */
+	flex-shrink: 2; /*  */
 }
 
 .ultima-caja {
 	background: violet;
 
-	/* -Alineaciones del cross axis para UN item */
-	/* align-self: stretch; /* */
-	/* align-self: flex-start; /* */
-	/* align-self: center; /* */
-	/* align-self: flex-end; /* */
-	/* align-self: baseline; /* */
+	/* Propiedades reservadas para cajas flexibles... */
+
+	/* flex-grow: 1; /* Obtiene el ancho sobrante del viewport */
+
+	/* Margin *Contrario a lo que indica la propiedad */
+	/* margin-right: auto;	/* Izquierda */
+	/* margin-left: auto;	/* Derecha */
+	/* margin: auto;		/* Centro */
+	/* margin-bottom: auto; /* Arriba */
+	/* margin-top: auto; 	/* Abajo */
+
+	/* -Alineacion Y */
+	/* align-self: stretch; /*  */
+	/* align-self: flex-start; /*  */
+	/* align-self: center; /*  */
+	/* align-self: flex-end; /*  */
+	/* align-self: baseline; /*  */
 }
