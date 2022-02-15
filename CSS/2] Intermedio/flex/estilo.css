@@ -8,10 +8,10 @@
 /* Contenedor */
 .flex-container {
 	background-color: #69c;
-	display: flex;
 	height: 100vh; /* Ocupa todo el alto del viewport (https://devcode.la/tutoriales/unidades-vh-vw-css/) */
 
 	/* Propiedades reservadas para contenedores flexibles... */
+	display: flex;
 
 	/* flex-wrap: nowrap; 		/* Sin saltos (valor por defecto) */
 	/* flex-wrap: wrap; 		/* Las cajas bajan cuando se cambia la resolucion */
@@ -59,7 +59,7 @@
 	margin: 5px;
 	padding-top: 5px;
 
-	/* Reparte el ancho sobrante del viewport entre todas las cajas */
+	/* Reparte el ancho sobrante del contenedor entre todas las cajas */
 	flex-grow: 1; /*  */
 }
 
