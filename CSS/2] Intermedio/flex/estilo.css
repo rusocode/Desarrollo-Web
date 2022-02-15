@@ -54,13 +54,13 @@
 	color: #fff;
 	text-align: center;
 	/* min-width: 200px; /* Especifica el minimo de flexibilidad */
-	width: 120px; 
+	width: 300px; 
 	height: 120px; 
 	margin: 5px;
 	padding-top: 5px;
 
 	/* Reparte el ancho sobrante del viewport entre todas las cajas */
-	/* flex-grow: 1; /*  */
+	flex-grow: 1; /*  */
 }
 
 .primera-caja {
@@ -69,13 +69,30 @@
 	/* Si por ejemplo sobran 300px, entonces 200px van para la caja roja y 100px para la violeta */
 	/* flex-grow: 2; /*  */
 
-	/* flex-basis tiene mayor prioridad aunque se coloque antes de width */
-	flex-basis: 200px;	/*  */
+	/* flex-basis tiene mayor prioridad aunque se coloque antes de width.
+	
+	Si el ancho de esta caja es mayor a las otras, entonces se empieza a repartir el espacio sobrante 
+	cuando todas las cajas alcancen el espacio asignado. */
+	flex-basis: 350px;	/*  */
 	/* width: 120px; 	/*  */
 
-	/* ¿Que caja va a ceder mas espacio cuado no alcance el lugar disponible? */
-	/* Cede el espacio especificado a las cajas restantes */
-	flex-shrink: 2; /*  */
+	/* Decide que espacio va a ceder cada caja. En este caso, la caja cede el doble de espacio que 
+	ceden las otras permitiendole a las demas ajustarse.
+	
+	Es una propiedad que nos permite elegir que caja va a ceder mas espacio cuando no alcance el 
+	lugar disponible. */
+	flex-shrink: 2; /* Tambien se puede usar el valor .5 para ceder la mitad de la caja y 0 no cede */
+
+	/* En conclusion, flex-grow, flex-basis y flex-shrink trabajan en conjunto. flex-grow reparte el espacio
+	sobrante del viewport entre las cajas y flex-shrink cede el espacio de una caja a las demas. */
+
+	/* flex: flex-grow flex-shrink flex-basis; /* Shorthand */
+
+	/* Order: es como el z index, pero en el eje en el que apunta el main axis. En vez de poner el componente
+	con mayor z index que otro por encima, este z index lo ubica al final, siempre y cuando el order sea el mas
+	alto. */
+	/* order: 4; /*  */
+
 }
 
 .ultima-caja {

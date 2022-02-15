@@ -1,0 +1,102 @@
+* {
+	font-family: monospace;
+	font-weight: 100;
+}
+
+body {
+	background-color: #000;
+}
+
+/* Contenedor flexible para el formulario */
+.flex-container {
+	background: #222;
+	margin: 50px;
+	outline: 1px solid white;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	/* Por defecto, los elementos flexibles no se reducen por debajo de su tamaño minimo de contenido */
+	min-width: 400px;
+	padding: 30px;
+	flex: 1;
+	order: 5;
+	/* text-align: center; /* Hace falta esto? */
+}
+
+.form__input {
+	background: transparent;
+	color: #fff;
+	width: 100%;
+	margin: 6px 0;
+	border: none;
+	outline: none;
+	border-bottom: 3px solid #094;
+	padding: 7px;
+}
+
+.form__input:focus {
+	background: linear-gradient(to bottom, transparent, #1a1a1a);
+	border-bottom: 3px solid #5d9;
+}
+
+.form textarea {
+	min-height: 140px;
+	resize: none;
+}
+
+/* Contenedor flexible para la imagen */
+.form-img {
+	min-width: 300px;
+	max-width: 400px;
+	padding: 10px;
+	display: flex;
+	flex: 1;
+	order: 2;
+}
+
+/* Caja para la imagen  */
+.form-img div {
+	padding: 10px;
+}
+
+.form-img img {
+	width: 90%;
+	margin: auto;
+}
+
+.img-container {
+	margin: auto;
+}
+
+.img-container div {
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.form input[type="submit"] {
+	background-color: #094;
+	border-bottom: none;
+	padding: 12px;
+}
+
+.form input[type="submit"]:hover {
+	background-color: #072;
+	border-bottom: none;
+	padding: 12px;
+}
+
+.form input[type="submit"]:focus {
+	background-color: #094;
+}
+
+.form input[type="submit"]:active {
+	background: linear-gradient(to bottom, #072, #050);
+}
+
