@@ -2,3 +2,20 @@
 	font-family: monospace;
 	font-weight: 100;
 }
+
+
+body {
+	background: radial-gradient(circle, #fff, #bbb);
+}
+
+.grid-container {
+	padding: 10px;
+	display: grid;
+	grid-template-rows: 15em 150px 150px; /* fr = flex-grow */
+	grid-template-columns: 150px 20em 150px;
+}
+
+.grid-item {
+	margin: 1px 1px;
+	border: 2px solid #000;
+}
