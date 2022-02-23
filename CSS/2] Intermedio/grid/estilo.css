@@ -1,21 +1,74 @@
 * {
 	font-family: monospace;
 	font-weight: 100;
+	/* font-size: 10px; */
 }
-
 
 body {
 	background: radial-gradient(circle, #fff, #bbb);
+	padding: 10px;
 }
 
 .grid-container {
-	padding: 10px;
+	background-color: #595959;
+	border: 3px solid #000;
+
 	display: grid;
-	grid-template-rows: 15em 150px 150px; /* fr = flex-grow */
-	grid-template-columns: 150px 20em 150px;
+
+	/* Medidas especiales de Grid
+	- em: significa «el tamaño de letra de mi elemento padre», osea del font-size.
+	- fr (es como flex-grow): absorbe espacio en las filas y reparte lo que sobra a las columnas. */
+
+	/* Grid Templates *Las celdas sobrantes quedan implicitas */
+	grid-template-columns: repeat(4, 50px);	/* Define la cantidad de columnas */
+	grid-template-rows: repeat(3, 100px);	/* Define la cantidad de filas */
+
+	/* Grid Gap *No se separan de los bordes del contenedor */
+	/* grid-column-gap: 5px; /* Separa las celdas entre columnas */
+	/* grid-row-gap: 5px;	 /* Separa las celdas entre filas */
+	/* grid-gap: 5px;		 /* Separa las celdas entre si */
+
+	/* Grid Implicito y Explicito */
+	/* grid-auto-columns: 100px;	/* Le da un tamaño a las columnas implicitas *No cambia su tamaño ya que modificaria las columnas explicitas */
+	/* grid-auto-rows: 30px;		/* Le da un tamaño a las filas implicitas */
+	/* grid-auto-flow: column;		/* Para que las celdas implicitas se comporten como columnas */
+	/* grid-auto-flow: row;			/* Para que las celdas implicitas se comporten como filas */
+	/* grid-auto-flow: dense;		/* Rellena los huecos ocasionados por roturas de limites inexistentes */
 }
 
 .grid-item {
-	margin: 1px 1px;
-	border: 2px solid #000;
+	background-color: #b3b3b3;
+	border: 1px solid #000;
+}
+
+/* Celda 1 */
+.grid-item:first-child {
+	/* background: violet; /*  */
+	
+	/* -Asignacion de espacios *Empuja las demas celdas */
+	/* grid-column: 1 / 3;	/* Asigna un espacio desde la columa 1 hasta el final de la columna 2 */
+	/* grid-row: 1 / 3; 	/* Asigna un espacio desde la fila 1 hasta el final de la fila 2 */
+
+	/* Estos shortshand se pueden reemplazar por...
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3; */
+
+	/* -Span *Otra forma de asignar espacios */
+	/* grid-column: 1 / span 2; /* Asigna un espacio desde la columa 1 hasta el final de la columna 2 */
+	/* grid-row: 1 / span 2; 	/* Asigna un espacio desde la fila 1 hasta el final de la fila 2 */
+}
+
+/* Celda 2 */
+.grid-item:nth-child(3) {
+	/* background: red; /*  */
+	
+	/* grid-column: 3 / 5; /* Asigna un espacio desde la columa 3 hasta el final de la columna 4 */
+
+	/* En caso de que la celda ocupe un limite que no existe (ej: 7), entonces se crean columnas que no estan
+	echas para crearse. */
+	/* grid-column: 5 / 7; /*  */
+	/* Entonces, ¿Como hago para ocupar esos espacios libres?
+	Usando "grid-auto-flow: dense;" */
 }
