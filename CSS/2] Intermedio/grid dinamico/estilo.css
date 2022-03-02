@@ -1,0 +1,33 @@
+* {
+	font-family: monospace;
+	font-weight: 100;
+}
+
+body {
+	background: radial-gradient(circle, #fff, #bbb);
+	padding: 10px;
+}
+
+.grid-container {
+	background-color: #595959;
+	border: 3px solid #000;
+
+	display: grid;
+
+	/* 	min-content: el minimo va a ser el ancho del texto que contenga.
+		max-content: el maximo va a ser el ancho de la linea de texto que contenga.
+		min-max: especifica el minimo y maximo de la celda. */
+
+	/* 	Con auto-fill pregunta si hay espacio para que entre una celda, y si es asi, entonces las genera.
+	 	Con auto-fit escala las celdas (probarlo con 3 celdas para notar el efecto). */
+
+ 	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+ 	grid-template-rows: repeat(3, 100px);
+ 	grid-auto-columns: 1fr;
+ 	grid-auto-rows: 1fr;
+}
+
+.grid-item {
+	background-color: #b3b3b3;
+	border: 1px solid #000;
+}

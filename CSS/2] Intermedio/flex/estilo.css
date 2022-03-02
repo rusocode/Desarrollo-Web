@@ -27,7 +27,7 @@
 
 	/* -Alineacion X */
 	/* justify-content: left;			/* Izquierda (valor por defecto) */
-	justify-content: center;			/* Centro */
+	/* justify-content: center;			/* Centro */
 	/* justify-content: right;			/* Derecha */
 	/* justify-content: space-around;	/* Le da un margen automatico a todas las cajas */
 	/* justify-content: space-between;	/* Deja la mayor cantidad de espacio entre cajas */
