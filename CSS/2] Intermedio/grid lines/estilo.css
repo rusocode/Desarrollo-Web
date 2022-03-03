@@ -1,0 +1,41 @@
+* {
+	font-family: monospace;
+	font-weight: 100;
+}
+
+body {
+	background: radial-gradient(circle, #fff, #bbb);
+}
+
+.grid-container {
+	background: #444;
+	display: grid;
+
+	border: 5px solid #000;
+
+	/* Grid lines */
+	grid-template-rows:
+			[fila-1] 150px
+			[fila-2] 150px 
+			[fila-3] 150px
+			[fila-fin];
+	grid-template-columns:
+			[columna-1] 150px
+			[columna-2] 150px
+			[columna-3] 150px
+			[columna-fin];
+}
+
+.grid-item {
+	background: lightgrey;
+	border: 1px solid #000;
+}
+
+.grid-item:first-child {
+	background: red;
+
+	/* ¿Como reemplazar los valores numericos de las propiedades grid-row y grid-column con nombres de linea?
+	Dandole nombre a las lineas. */
+	grid-row: fila-1 / fila-3;
+	grid-column: columna-1 / columna-fin;
+}

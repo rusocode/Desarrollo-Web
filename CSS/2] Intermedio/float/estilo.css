@@ -3,8 +3,7 @@
 	font-size: 25px;
 }
 
-/* El unico uso util de la propiedad float es este. Da un efecto en donde
-el texto envuelve la imagen. */
+/* El unico uso util de la propiedad float es este. Da un efecto en donde el texto envuelve la imagen. */
 
 .contenedor {
 	width: 50%;

@@ -21,7 +21,5 @@
 	/* object-fit: fixed; 		/* Ajusta la imagen a la caja dando un efecto de estiramiento */
 	object-fit: cover; 			/* Ajusta la imagen a la caja y recorta los bordes sobrantes */
 	object-position: left; 		/* Muestra la imagen mas a la izquierda */
-	
-	
 }
 
