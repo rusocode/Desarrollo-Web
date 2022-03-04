@@ -1,0 +1,65 @@
+* {
+	font-family: monospace;
+	font-weight: 100;
+}
+
+/* 	Hay estadisticas en donde comprueban que si la pagina tarda en cargar 4 segundos, el 75% de las 
+	personas la abandonan. */
+
+.container {
+	background: #86f;
+	padding: 30px;
+}
+
+.caja {
+	/* El valor "inherit" hereda el color de la caja que lo contiene */
+	background: #025;
+	width: 80px;
+	height: 80px;
+	margin-top: 20px;
+	position: relative;
+	/* No es recomendado usar el valor "all" ya que consume muchos recursos, es mejor especificar la propiedad */
+	transition-property: left, background;
+	/* Tiempo que tarda en pasar de un valor a otro de forma lenta */
+	transition-duration: 3s, 1s; /* Cambia el left en 3 segundos y el background en 1 segundo */
+	/* Tiempo que tarda de pasar de un valor a otro de forma instantanea */
+	/* transition-delay: 3; 	/*  */
+	left: 0;
+}
+
+/* Cuando se pasa/saca el mouse por encima del contenedor cambia el estilo de todas las cajas */
+.container:hover > .caja {
+	left: 90%;
+	background: #fff;
+}
+
+/* Cuando se pasa/saca el mouse por encima de la caja */
+/* .caja:hover { 
+	left: 80%;
+} */
+
+/* Velocidades */
+.caja:first-child {
+	/* Misma velocidad */
+	transition-timing-function: linear;
+}
+
+.caja:nth-child(2) {
+	/* Comienza rapido y termina despacio (valor por defecto) */
+	transition-timing-function: ease;
+}
+
+.caja:nth-child(3) {
+	/* Comienza despacio y termina rapido */
+	transition-timing-function: ease-in;
+}
+
+.caja:nth-child(4) {
+	/* Igual que ease pero esta es menos brusca */
+	transition-timing-function: ease-out;
+}
+
+.caja:nth-child(5) {
+	/* Comienza despacio, acelera y termina despacio */
+	transition-timing-function: ease-in-out;
+}

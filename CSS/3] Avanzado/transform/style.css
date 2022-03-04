@@ -1,0 +1,34 @@
+* {
+	font-family: monospace;
+	font-weight: 100;
+}
+
+.container {
+	background: #86f;
+	padding: 30px;
+}
+
+.caja {
+
+	background: #025;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	margin: 20px;
+	color: #fff;
+
+	/* Maneras de transformar la caja */
+	/* transform: translate(50px, 200px); /* La traslada en el eje x;y */
+	/* transform: scale(2); /* La escala */
+
+	/* transition: transform 1s;  /* Tiempo que tarda en cambiar de propiedad */
+	
+}
+
+.caja:hover {
+	/* transform: scaleX(2) translate(50px); /* Es posible definir mas de una propiedad en el transform */
+}
+
+b {
+	margin: auto;
+}

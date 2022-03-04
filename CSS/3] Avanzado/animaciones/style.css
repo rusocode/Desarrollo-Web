@@ -1,0 +1,61 @@
+* {
+	font-family: monospace;
+	font-weight: 100;
+}
+
+
+.container {
+	background: #86f;
+	padding: 30px;
+}
+
+.caja {
+
+	background: #025;
+	width: 80px;
+	height: 80px;
+	position: relative; /* Posiciona la caja */
+
+	/* Propiedades de la animacion */
+	animation-name: desplazamiento; /* Nombre */
+	animation-delay: 1s; /* Tiempo que tarda en empezar */
+	animation-duration: 2s; /* Tiempo que dura */
+	animation-iteration-count: 2; /* Cantidad de veces que se repite */
+	animation-direction: alternate; /* Direccion *alternate funciona cuando el iteration es mayor a 1 */
+	animation-fill-mode: both; /* Define el modo final. En este caso, evita que la caja empieze 
+	con otro color y no con el especificado (el valor forwards se queda como termina). */
+	
+	/* Cubic Bezier */
+	/* Define los x;y para el primer punto y x;y para el segundo */
+	animation-timing-function: cubic-bezier(0.18, 0.47, 0.29, 0.81); /* Le da efecto de una piña o rebote :D */
+
+}
+
+/* Define la animacion */
+@keyframes desplazamiento {
+	
+	/* Empieza desde */
+	/* from {
+		left: 0;
+	} */
+
+	/* Termina en */
+	/* to {
+		left: 80%;
+	} */
+
+	/* Otra forma de definir el inicio y fin... */
+	0% {
+		background: #fff;
+		left: 0;
+	}
+
+	50% {
+		background: red;
+	}
+
+	100% {
+		background: #000;
+		left: 80%;
+	}
+}
