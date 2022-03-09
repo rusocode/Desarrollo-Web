@@ -2,3 +2,10 @@
 	font-family: monospace;
 	font-weight: 100;
 }
+
+.container {
+	background: slateblue;
+	font-size: 20px;
+	padding: 20px;
+	letter-spacing: 2px; /* Espacio entre letras */
+}

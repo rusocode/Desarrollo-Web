@@ -2,3 +2,61 @@
 	font-family: monospace;
 	font-weight: 100;
 }
+
+/* 10px = 1rem = 1em */
+
+img {
+
+	margin: 30px;
+
+	/* filter: blur(10px); /* Desenfoca la 	imagen 10px */
+	/* filter: brightness(0.5); /* Le da brillo */
+	/* filter: contrast(1.5); /* Le da contraste */
+	
+	/* Diferencia entre box-shadow y drop-shadow. Basicamente el box-shadow se usa para las imagenes completas 
+	   y drop-shadow para logos transparentes. */
+	/* box-shadow: 10px 10px 10px #000; /*  */
+	/* filter: drop-shadow(0px 0px 10px #000); /* Sombra derecha, sombra de abajo y sombra completa */
+
+	/* filter es como transform, podemos usar varias propiedades juntas */
+	/* filter: brightness(0.5) contrast(3); /*  */
+
+	/* filter: grayscale(0.5); /* Gris que se le da */
+	/* filter: hue-rotate(40deg); /* Rota la gama de colores */
+	/* filter: invert(); /* Invierte los colores */
+	/* filter: opacity(.5); /* Opacidad */
+	/* filter: saturate(400%); /* Saturacion */
+	/* filter: sepia(1); /* Sepia */
+}
+
+.container {
+	background-color: #fff;
+	filter: contrast(30); /* El contraste no funciona si no tiene un color de fondo */
+}
+
+.caja {
+	background: red; /* #b3ecff */
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 40px;
+	border-radius: 50%;
+
+	filter: blur(20px);
+}
+
+.caja:first-child {
+	animation: trasladar 3s alternate infinite;
+}
+
+@keyframes trasladar {
+
+	0% {
+		transform: translate(0);
+	}
+
+	100% {
+		transform: translate(160px);
+	}
+
+}

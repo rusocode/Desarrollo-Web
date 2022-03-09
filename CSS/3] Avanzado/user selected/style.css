@@ -2,3 +2,9 @@
 	font-family: monospace;
 	font-weight: 100;
 }
+
+.container {
+	font-size: 20px;
+	/* Evita la seleccion del texto dentro del contenedor */
+	user-select: none;
+}

@@ -2,3 +2,12 @@
 	font-family: monospace;
 	font-weight: 100;
 }
+
+.container {
+	background: #b3ecff;
+	padding: 20px;
+	font-size: 20px;
+	/* direction: ltr; /* Muestra la direccion del contenido de izquierda a derecha *Valor por defecto */
+	direction: rtl; /* Muestra la direccion del contenido de derecha a izquierda */
+}
+

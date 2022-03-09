@@ -2,3 +2,14 @@
 	font-family: monospace;
 	font-weight: 100;
 }
+
+.container {
+	font-size: 20px;
+	padding: 20px;	
+}
+
+/* ¿Como hacer para que la transicion de un contenedor a otro sea mas lenta? */	
+#content {
+	background: red;
+	scroll-behavior: smooth; /* WTF NO FUNCIONA! */
+}

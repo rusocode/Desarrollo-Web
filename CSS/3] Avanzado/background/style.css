@@ -2,3 +2,18 @@
 	font-family: monospace;
 	font-weight: 100;
 }
+
+.container {
+	background: #86f;
+	height: 300px;
+	margin: 40px 0px;
+	padding: 20px;
+	background-image: url(http://www.solofondos.com/wp-content/uploads/2015/12/wallpaper-water-tracks-train-high-resolution-25621.jpg);
+	background-size: cover; /* Ajusta la imagen */
+	/* background-position: left top; /* Posiciona la imagen */
+	background-repeat: no-repeat; /* No repita la imagen */
+	/* background-clip: content-box; /* Recorta la imagen */
+	/* background-origin: border-box; /* Crea la imagen a partir de aca */
+	/* background-attachment: scroll; /* Toma como referencia el contenedor */
+	background-attachment: fixed; /* Toma como referencia el Viewport */
+}
